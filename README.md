@@ -78,8 +78,8 @@ registro_DeltaData/
 
 ### 1️⃣ Clonar el Repositorio
 ```
-git clone https://github.com/eysa16/creditos_DeltaData.git
-cd creditos_DeltaData
+git clone https://github.com/eysa16/registroCreditos_DeltaData.git
+cd registroCreditos_DeltaData
 ```
 
 ### 2️⃣ Crear un Entorno Virtual
