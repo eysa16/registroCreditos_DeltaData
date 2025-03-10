@@ -1,0 +1,162 @@
+:root {
+    --primario: #2c3e50;
+    --secundario: #3498db;
+    --fondo: #ecf0f1;
+    --blanco: #ffffff;
+    --gris: #bdc3c7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--fondo);
+    color: var(--primario);
+}
+
+header {
+    background-color: var(--primario);
+    color: var(--blanco);
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.editar{
+    background: #228B22;
+}
+
+.eliminar{
+    background: #e74c3c;
+}
+
+/* Formulario */
+.formulario {
+    background: var(--blanco);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.formulario input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid var(--gris);
+    border-radius: 5px;
+}
+
+.formulario button {
+    background: var(--secundario);
+    color: var(--blanco);
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.formulario button:hover {
+    background: #2980b9;
+}
+
+
+/* Gráfica */
+.grafica {
+    background: var(--blanco);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.grafica img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    margin-top: 60px;
+}
+
+/* Tabla */
+.tabla {
+    grid-column: span 2;
+    background: var(--blanco);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabla h2 {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--blanco);
+}
+
+table, th, td {
+    border: 1px solid var(--gris);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: var(--secundario);
+    color: var(--blanco);
+}
+
+td button {
+    color: var(--blanco);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .grafica img {
+        max-width: 100%;
+    }
+
+    .tabla {
+        grid-column: span 1;
+    }
+}
